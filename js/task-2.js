@@ -14,7 +14,7 @@ class Storage {
   }
 
   removeItem(itemToRemove) {
-    // burayı nasıl yapacağımı bilmiyorum
+    this.#items = this.#items.filter(item => item !== itemToRemove);
   }
 }
 
